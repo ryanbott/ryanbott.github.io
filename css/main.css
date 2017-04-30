@@ -309,10 +309,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Literal.Number.Integer.Long */
 body {
-  background: linear-gradient(113deg, rgba(62, 68, 70, 0.99), rgba(27, 97, 110, 0.9)), url("/assets/svg.svg");
+  background: linear-gradient(113deg, rgba(62, 68, 70, 0.99), rgba(27, 97, 110, 0.9)), url("/assets/tri.png");
   background-size: 120% 140%;
-  -webkit-animation: AnimationName 43s ease infinite;
-  animation: AnimationName 43s ease infinite; }
+  -webkit-animation: AnimationName 23s ease infinite;
+  animation: AnimationName 23s ease infinite; }
 
 @-webkit-keyframes AnimationName {
   0% {

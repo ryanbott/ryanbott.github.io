@@ -6,12 +6,12 @@
 
 body {
   background: linear-gradient(113deg, $fade1, $fade2),
-  url('/assets/svg.svg');
+  url('/assets/tri.png');
   background-size: 120% 140%;
-    -webkit-animation: AnimationName 43s ease infinite;
-    -moz-animation: AnimationName 43s ease infinite;
-    -o-animation: AnimationName 43s ease infinite;
-    animation: AnimationName 43s ease infinite;
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    -o-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
     @-webkit-keyframes AnimationName {
         0%{background-position:0% 30%}
         50%{background-position:100% 71%}
