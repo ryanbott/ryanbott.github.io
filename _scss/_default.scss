@@ -1,0 +1,30 @@
+$main: #FDFEFF;
+$teal: #5DC7CC;
+$back: #2e3137;
+$back2: #3f434c;
+$back3: #111319;
+$woo: teal;
+$fade1: #565861;
+$fade2: #272b34;
+$offwhite: #e8e8e8;
+:root {
+  --main: #FDFEFF;
+  --woo: pink;
+}
+
+$prox: Geneva, Verdana, Helvetica, Arial, Sans-Serif;
+$serif: Palatino, serif;
+
+h1 {
+  font: 2em/2em $prox;
+  color: $offwhite;
+}
+p {
+  font: 18px/1em $prox;
+  font-weight: light;
+  color: $offwhite;
+  padding-top:1em;
+}
+i {
+  padding-right:4px;
+}

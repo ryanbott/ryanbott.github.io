@@ -1,0 +1,108 @@
+@import "default";
+@import "header";
+@import "footer";
+@import "reset";
+@import "syntax";
+
+body {
+   /*can be treated like a fallback
+   background-color: $back;
+
+   /* will be "on top", if browser supports it
+   background-image: radial-gradient(ellipse at 20px 10px, #3f434c 10%, #2e3137 30%, #111319 100%);
+   /* these will reset other properties, like background-position, but it does know what you mean
+   background: $back;
+   background: radial-gradient(ellipse at 20px 10px, #3f434c 10%, #2e3137 30%, #111319 100%);
+   /*background: radial-gradient(
+      ellipse at top left,
+      #6B6F79,
+      #272B34 42%);*/
+
+    background: linear-gradient(113deg, $fade1, $fade2);
+    background-size: 200% 300%;
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    -o-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 30%}
+        50%{background-position:100% 71%}
+        100%{background-position:0% 30%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 30%}
+        50%{background-position:100% 71%}
+        100%{background-position:0% 30%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:0% 30%}
+        50%{background-position:100% 71%}
+        100%{background-position:0% 30%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 30%}
+        50%{background-position:100% 71%}
+        100%{background-position:0% 30%}
+ }
+.hero {
+  &_text {
+    float:right;
+    @media (max-width:380px) {
+      float:left;
+    }
+    padding:1em;
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+  }
+  &_line {
+    background: $teal;
+    background-color: $teal;
+    height:4px;
+    width:22px;
+    border-style: none;
+    border-width: 0;
+  }
+}
+.links {
+  padding-top:1em;
+  li {
+    text-decoration:none;
+    display:inline;
+    padding: .5em .2em;
+    a {
+      font-family: $prox;
+      font-size:12px;
+      text-decoration: none;
+      color:$offwhite;
+      &:hover {
+        color:white;
+        text-decoration: underline;
+        i.design {
+          color: #E44A87;
+        }
+        i.photos {
+          color: #202020;
+        }
+        i.shop {
+          color: #0075E4;
+        }
+        i.social {
+          color: #D6C9B5;
+        }
+        i.code {
+          color: #CD2228;
+        }
+      }
+    }
+  }
+}
+
+.break {
+  display:none;
+  height:8px;
+  @media (max-width:670px) {
+    display:block;
+  }
+}
+}
