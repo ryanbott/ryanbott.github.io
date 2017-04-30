@@ -1,7 +1,3 @@
-:root {
-  --main: #FDFEFF;
-  --woo: pink; }
-
 h1 {
   font: 2em/2em Geneva, Verdana, Helvetica, Arial, Sans-Serif;
   color: #e8e8e8; }
@@ -15,6 +11,8 @@ p {
 i {
   padding-right: 4px; }
 
+/*$fade1: rgba(86, 88, 97, .99);
+$fade2: rgba(39, 43, 52, .90);*/
 /* Global Reset */
 * {
   margin: 0;
@@ -311,22 +309,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Literal.Number.Integer.Long */
 body {
-  /*can be treated like a fallback
-   background-color: $back;
-
-   /* will be "on top", if browser supports it
-   background-image: radial-gradient(ellipse at 20px 10px, #3f434c 10%, #2e3137 30%, #111319 100%);
-   /* these will reset other properties, like background-position, but it does know what you mean
-   background: $back;
-   background: radial-gradient(ellipse at 20px 10px, #3f434c 10%, #2e3137 30%, #111319 100%);
-   /*background: radial-gradient(
-      ellipse at top left,
-      #6B6F79,
-      #272B34 42%);*/
-  background: linear-gradient(113deg, #565861, #272b34);
-  background-size: 200% 300%;
-  -webkit-animation: AnimationName 13s ease infinite;
-  animation: AnimationName 13s ease infinite; }
+  background: linear-gradient(113deg, rgba(62, 68, 70, 0.99), rgba(27, 97, 110, 0.9)), url("/assets/tri.png");
+  background-size: 120% 140%;
+  -webkit-animation: AnimationName 43s ease infinite;
+  animation: AnimationName 43s ease infinite; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -343,50 +329,54 @@ body {
     background-position: 100% 71%; }
   100% {
     background-position: 0% 30%; } }
-  body .hero_text {
-    float: right;
-    padding: 1em;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%); }
-    @media (max-width: 380px) {
-      body .hero_text {
-        float: left; } }
-  body .hero_line {
-    background: #5DC7CC;
-    background-color: #5DC7CC;
-    height: 4px;
-    width: 22px;
-    border-style: none;
-    border-width: 0; }
-  body .links {
-    padding-top: 1em; }
-    body .links li {
+
+.hero_text {
+  float: right;
+  padding: 1em;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%); }
+  @media (max-width: 380px) {
+    .hero_text {
+      float: left; } }
+
+.hero_line {
+  background: #5DC7CC;
+  background-color: #5DC7CC;
+  height: 4px;
+  width: 22px;
+  border-style: none;
+  border-width: 0; }
+
+.links {
+  padding-top: 1em; }
+  .links li {
+    text-decoration: none;
+    display: inline;
+    padding: .5em .2em; }
+    .links li a {
+      font-family: Geneva, Verdana, Helvetica, Arial, Sans-Serif;
+      font-size: 12px;
       text-decoration: none;
-      display: inline;
-      padding: .5em .2em; }
-      body .links li a {
-        font-family: Geneva, Verdana, Helvetica, Arial, Sans-Serif;
-        font-size: 12px;
-        text-decoration: none;
-        color: #e8e8e8; }
-        body .links li a:hover {
-          color: white;
-          text-decoration: underline; }
-          body .links li a:hover i.design {
-            color: #E44A87; }
-          body .links li a:hover i.photos {
-            color: #202020; }
-          body .links li a:hover i.shop {
-            color: #0075E4; }
-          body .links li a:hover i.social {
-            color: #D6C9B5; }
-          body .links li a:hover i.code {
-            color: #CD2228; }
-  body .break {
-    display: none;
-    height: 8px; }
-    @media (max-width: 670px) {
-      body .break {
-        display: block; } }
+      color: #e8e8e8; }
+      .links li a:hover {
+        color: white;
+        text-decoration: underline; }
+        .links li a:hover i.design {
+          color: #E44A87; }
+        .links li a:hover i.photos {
+          color: #202020; }
+        .links li a:hover i.shop {
+          color: #0075E4; }
+        .links li a:hover i.social {
+          color: #D6C9B5; }
+        .links li a:hover i.code {
+          color: #CD2228; }
+
+.break {
+  display: none;
+  height: 8px; }
+  @media (max-width: 670px) {
+    .break {
+      display: block; } }

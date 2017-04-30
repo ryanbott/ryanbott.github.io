@@ -5,25 +5,13 @@
 @import "syntax";
 
 body {
-   /*can be treated like a fallback
-   background-color: $back;
-
-   /* will be "on top", if browser supports it
-   background-image: radial-gradient(ellipse at 20px 10px, #3f434c 10%, #2e3137 30%, #111319 100%);
-   /* these will reset other properties, like background-position, but it does know what you mean
-   background: $back;
-   background: radial-gradient(ellipse at 20px 10px, #3f434c 10%, #2e3137 30%, #111319 100%);
-   /*background: radial-gradient(
-      ellipse at top left,
-      #6B6F79,
-      #272B34 42%);*/
-
-    background: linear-gradient(113deg, $fade1, $fade2);
-    background-size: 200% 300%;
-    -webkit-animation: AnimationName 13s ease infinite;
-    -moz-animation: AnimationName 13s ease infinite;
-    -o-animation: AnimationName 13s ease infinite;
-    animation: AnimationName 13s ease infinite;
+  background: linear-gradient(113deg, $fade1, $fade2),
+  url('/assets/tri.png');
+  background-size: 120% 140%;
+    -webkit-animation: AnimationName 43s ease infinite;
+    -moz-animation: AnimationName 43s ease infinite;
+    -o-animation: AnimationName 43s ease infinite;
+    animation: AnimationName 43s ease infinite;
     @-webkit-keyframes AnimationName {
         0%{background-position:0% 30%}
         50%{background-position:100% 71%}
@@ -44,6 +32,8 @@ body {
         50%{background-position:100% 71%}
         100%{background-position:0% 30%}
  }
+}
+
 .hero {
   &_text {
     float:right;
@@ -98,11 +88,10 @@ body {
   }
 }
 
-.break {
-  display:none;
-  height:8px;
-  @media (max-width:670px) {
-    display:block;
+  .break {
+    display:none;
+    height:8px;
+    @media (max-width:670px) {
+      display:block;
+    }
   }
-}
-}
