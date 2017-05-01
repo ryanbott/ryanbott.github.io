@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0; }
 
 .col_half {
-  width: calc(99.9% * 1/2 - (30px - 30px * 1/2)); }
+  width: calc(99.9% * 7/12 - (30px - 30px * 1/2)); }
   @media (max-width: 380px) {
     .col_half {
       width: 100%; } }
@@ -311,14 +311,15 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: linear-gradient(113deg, rgba(62, 68, 70, 0.99), rgba(27, 97, 110, 0.9)), url("/assets/tri.png");
   background-size: 120% 140%;
-  -webkit-animation: AnimationName 23s ease infinite;
-  animation: AnimationName 23s ease infinite; }
+  background-repeat: repeat-x;
+  -webkit-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite; }
 
 @-webkit-keyframes AnimationName {
   0% {
     background-position: 0% 30%; }
   50% {
-    background-position: 100% 71%; }
+    background-position: 50% 71%; }
   100% {
     background-position: 0% 30%; } }
 
@@ -326,7 +327,7 @@ body {
   0% {
     background-position: 0% 30%; }
   50% {
-    background-position: 100% 71%; }
+    background-position: 50% 71%; }
   100% {
     background-position: 0% 30%; } }
 
@@ -340,6 +341,10 @@ body {
   @media (max-width: 380px) {
     .hero_text {
       float: left; } }
+  @media (max-height: 600px) {
+    .hero_text {
+      top: 35%;
+      margin-top: -7em; } }
 
 .hero_line {
   background: #5DC7CC;
@@ -357,7 +362,7 @@ body {
     padding: .5em .2em; }
     .links li a {
       font-family: Geneva, Verdana, Helvetica, Arial, Sans-Serif;
-      font-size: 12px;
+      font-size: 14px;
       text-decoration: none;
       color: #e8e8e8; }
       .links li a:hover {

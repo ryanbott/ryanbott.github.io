@@ -8,28 +8,29 @@ body {
   background: linear-gradient(113deg, $fade1, $fade2),
   url('/assets/tri.png');
   background-size: 120% 140%;
-    -webkit-animation: AnimationName 23s ease infinite;
-    -moz-animation: AnimationName 23s ease infinite;
-    -o-animation: AnimationName 23s ease infinite;
-    animation: AnimationName 23s ease infinite;
+  background-repeat: repeat-x;
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    -o-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
     @-webkit-keyframes AnimationName {
         0%{background-position:0% 30%}
-        50%{background-position:100% 71%}
+        50%{background-position:50% 71%}
         100%{background-position:0% 30%}
     }
     @-moz-keyframes AnimationName {
         0%{background-position:0% 30%}
-        50%{background-position:100% 71%}
+        50%{background-position:50% 71%}
         100%{background-position:0% 30%}
     }
     @-o-keyframes AnimationName {
         0%{background-position:0% 30%}
-        50%{background-position:100% 71%}
+        50%{background-position:50% 71%}
         100%{background-position:0% 30%}
     }
     @keyframes AnimationName {
         0%{background-position:0% 30%}
-        50%{background-position:100% 71%}
+        50%{background-position:50% 71%}
         100%{background-position:0% 30%}
  }
 }
@@ -43,6 +44,10 @@ body {
     padding:1em;
     position: relative;
     top: 50%;
+    @media (max-height:600px) {
+      top:35%;
+      margin-top:-7em;
+    }
     transform: translateY(100%);
   }
   &_line {
@@ -62,7 +67,7 @@ body {
     padding: .5em .2em;
     a {
       font-family: $prox;
-      font-size:12px;
+      font-size:14px;
       text-decoration: none;
       color:$offwhite;
       &:hover {
