@@ -344,7 +344,7 @@ body {
   @media (max-height: 600px) {
     .hero_text {
       top: 35%;
-      margin-top: -7em; } }
+      margin-top: -8em; } }
 
 .hero_line {
   background: #5DC7CC;
