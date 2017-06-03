@@ -41,6 +41,10 @@
 	<div class="form_box">
 		<form action="https://getsimpleform.com/messages?form_api_token=62e040ab109d7fa90127bd2f8fb321be" class="form form--contact" method="post" accept-charset="utf-8" enctype="multipart/form-data">
 
+
+      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+       <input type='hidden' name='redirect_to' value='http://ryanbott.com/contact' />
+
         <input type="hidden" name="action" value="amForms/submissions/saveSubmission">
         <input type="hidden" name="handle" value="contact">
         <input type="hidden" name="namespace" value="form_vqm6AKRbIS">
